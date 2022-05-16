@@ -1,7 +1,9 @@
 # Benchmark: ADMB 12.3 vs 13.0-beta
 
 Two modern laptops, Lenovo P15 Gen 1 (i7-10875H) and Dell Precision 3560
-(i7-1165G7), each with a number of VMs. ADMB built from the current
+(i7-1165G7), each with a number of VMs. ADMB built from the [12.3
+source](https://github.com/admb-project/admb/releases/download/admb-12.3/admb-12.3-src.zip)
+and from the current
 [admb-13.0](https://github.com/admb-project/admb/tree/admb-13.0) branch (commit
 8820af06) with `make -j8`. The
 [example](https://github.com/admb-project/admb/tree/main/examples/admb) models
