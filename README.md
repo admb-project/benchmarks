@@ -10,6 +10,6 @@ from
 
 The [analysis](analysis.R) of the [results](results.csv) indicates that for
 these examples, ADMB 12.3 is around 25% faster in Linux and around 100% faster
-in Windows.
+in Windows. See [plot](plot.pdf).
 
 This seems worth looking into before releasing 13.0.
