@@ -9,7 +9,7 @@ pdf("plot.pdf", width=16, height=10)
 
 x <- x[order(x$Machine, x$OS, x$Test, x$ADMB),]
 x <- x[c("Machine", "OS", "Test", "ADMB", "Runtime")]
-xrel <- x$Runtime[x$ADMB == "13.0-beta"] / x$Runtime[x$ADMB == "12.3"]
+xrel <- x$Runtime[x$ADMB == "12.3"] / x$Runtime[x$ADMB == "13.0-beta"]
 round(sort(xrel), 2)
 xplot <- barchart(Runtime ~ Test | Machine + OS, groups=ADMB, data=x, col=3:2,
                   main="Detailed comparison",
@@ -20,7 +20,7 @@ xplot <- barchart(Runtime ~ Test | Machine + OS, groups=ADMB, data=x, col=3:2,
 x$Platform <- "Linux"
 x$Platform[grep("Windows", x$OS)] <- "Windows"
 y <- aggregate(Runtime ~ ADMB + Platform + Test, data=x, median)
-yrel <- y$Runtime[y$ADMB == "13.0-beta"] / y$Runtime[y$ADMB == "12.3"]
+yrel <- y$Runtime[y$ADMB == "12.3"] / y$Runtime[y$ADMB == "13.0-beta"]
 round(sort(yrel), 2)
 yplot <- barchart(Runtime ~ Test | Platform, groups=ADMB, data=y, col=3:2,
                   main="Grouped comparison",
