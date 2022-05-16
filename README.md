@@ -8,7 +8,8 @@ from
 [admb/examples](https://github.com/admb-project/admb/tree/main/examples/admb):
 `catage -mcmc 1e6 -mcsave 1e3` and `nm2vol`.
 
-The [analysis](analysis.R) of the [results](results.csv) indicates that ADMB
-12.3 is 35% faster than ADMB 13.0-beta.
+The [analysis](analysis.R) of the [results](results.csv) indicates that for
+these examples, ADMB 12.3 is around 25% faster in Linux and around 100% faster
+in Windows.
 
-This is worth looking into before releasing 13.0.
+This seems worth looking into before releasing 13.0.
