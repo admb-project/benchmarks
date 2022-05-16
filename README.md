@@ -9,7 +9,11 @@ from
 `catage -mcmc 1e6 -mcsave 1e3` and `nm2vol`.
 
 The [analysis](analysis.R) of the [results](results.csv) indicates that for
-these examples, ADMB 12.3 is around 25% faster in Linux and around 100% faster
-in Windows. See [plot](plot.pdf).
+these examples, ADMB 12.3 is consistently and considerably faster than ADMB
+13.0-beta, around 25% faster in Linux and around 100% faster in Windows. See
+[plot](plot.pdf).
+
+One would hope that ADMB 13.0 will be equally fast as previous versions - or at
+least not much slower.
 
 This seems worth looking into before releasing 13.0.
