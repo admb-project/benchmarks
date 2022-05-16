@@ -12,7 +12,7 @@ x <- x[c("Machine", "OS", "Test", "ADMB", "Runtime")]
 xrel <- x$Runtime[x$ADMB == "12.3"] / x$Runtime[x$ADMB == "13.0-beta"]
 round(sort(xrel), 2)
 xplot <- barchart(Runtime ~ Test | Machine + OS, groups=ADMB, data=x, col=3:2,
-                  main="Detailed comparison",
+                  main="Detailed comparison", ylab="Runtime (sec)",
                   sub="Green = ADMB 12.3\nRed = ADMB 13.0-beta")
 
 ## Grouped comparison
@@ -23,7 +23,7 @@ y <- aggregate(Runtime ~ ADMB + Platform + Test, data=x, median)
 yrel <- y$Runtime[y$ADMB == "12.3"] / y$Runtime[y$ADMB == "13.0-beta"]
 round(sort(yrel), 2)
 yplot <- barchart(Runtime ~ Test | Platform, groups=ADMB, data=y, col=3:2,
-                  main="Grouped comparison",
+                  main="Grouped comparison", ylab="Runtime (sec)",
                   sub="Green = ADMB 12.3\nRed = ADMB 13.0-beta")
 
 ## Export plots
