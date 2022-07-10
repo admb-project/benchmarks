@@ -1,5 +1,18 @@
 # Benchmark: ADMB 12.3 vs 13.0-beta
 
+## 10 Jul 2022
+
+Revisiting the benchmark from May, building ADMB from the
+[admb-13.0](https://github.com/admb-project/admb/tree/admb-13.0) branch (commit
+f6721274), updated in July.
+
+The [analysis](2022_07_10/analysis.R) of the July
+[results](2022_07_10/results.csv) indicates that for these examples, ADMB
+13.0-beta still has a performance problem in Windows. See
+[plot](2022_07_10/plot.pdf).
+
+---
+
 ## 16 May 2022
 
 Two modern laptops, Lenovo P15 Gen 1 (i7-10875H) and Dell Precision 3560
@@ -24,16 +37,3 @@ This seems worth looking into before releasing 13.0.
 
 Related: Link to recent [SS3
 benchmarks](https://github.com/nmfs-stock-synthesis/stock-synthesis/issues/257#issuecomment-1125039928).
-
----
-
-## 10 Jul 2022
-
-Revisiting the benchmark, building ADMB from the
-[admb-13.0](https://github.com/admb-project/admb/tree/admb-13.0) branch (commit
-f6721274).
-
-The [analysis](2022_07_10/analysis.R) of the July
-[results](2022_07_10/results.csv) indicates that for these examples, ADMB
-13.0-beta still has a performance problem in Windows. See
-[plot](2022_07_10/plot.pdf).
