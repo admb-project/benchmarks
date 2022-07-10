@@ -33,3 +33,7 @@ Revisiting the benchmark, building ADMB from the
 [admb-13.0](https://github.com/admb-project/admb/tree/admb-13.0) branch (commit
 f6721274).
 
+The [analysis](2022_07_10/analysis.R) of the July
+[results](2022_07_10/results.csv) indicates that for these examples, ADMB
+13.0-beta still has a performance problem in Windows. See
+[plot](2022_07_10/plot.pdf).
