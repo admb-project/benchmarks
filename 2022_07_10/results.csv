@@ -11,9 +11,9 @@ P15 Gen 1,Windows 10 (native),10.3 (rtools 4.2),13.0_beta_2022_07_10,catage,73.0
 P15 Gen 1,Ubuntu 20.04 (WSL),9.4,12.3,catage,32.8
 P15 Gen 1,Ubuntu 20.04 (WSL),9.4,13.0_beta_2022_05_16,catage,42.9
 P15 Gen 1,Ubuntu 20.04 (WSL),9.4,13.0_beta_2022_07_10,catage,31.1
-Precision 3560,Windows 11 (native),10.3 (rtools 4.2),12.3,vol,42.8
+Precision 3560,Windows 11 (native),10.3 (rtools 4.2),12.3,vol,41.7
 Precision 3560,Windows 11 (native),10.3 (rtools 4.2),13.0_beta_2022_05_16,vol,158.6
-Precision 3560,Windows 11 (native),10.3 (rtools 4.2),13.0_beta_2022_07_10,vol,77.8
+Precision 3560,Windows 11 (native),10.3 (rtools 4.2),13.0_beta_2022_07_10,vol,48.1
 Precision 3560,Ubuntu 20.04 (WSL),9.4,12.3,vol,20.1
 Precision 3560,Ubuntu 20.04 (WSL),9.4,13.0_beta_2022_05_16,vol,24.1
 Precision 3560,Ubuntu 20.04 (WSL),9.4,13.0_beta_2022_07_10,vol,20.8
