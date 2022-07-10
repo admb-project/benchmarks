@@ -9,11 +9,11 @@ pdf("plot.pdf", width=16, height=10)
 
 x <- x[order(x$Machine, x$OS, x$Test, x$ADMB),]
 x <- x[c("Machine", "OS", "Test", "ADMB", "Runtime")]
-xrel <- x$Runtime[x$ADMB == "12.3"] / x$Runtime[x$ADMB == "13.0-beta"]
+xrel <- x$Runtime[x$ADMB == "12.3"] / x$Runtime[x$ADMB == "13.0_beta_2022_05_16"]
 round(sort(xrel), 2)
 xplot <- barchart(Runtime ~ Test | Machine + OS, groups=ADMB, data=x, col=3:2,
                   main="Detailed comparison", ylab="Runtime (sec)",
-                  sub="Green = ADMB 12.3\nRed = ADMB 13.0-beta")
+                  sub="Green = ADMB 12.3\nRed = ADMB 13.0-beta (May)")
 
 ## Grouped comparison
 
@@ -24,7 +24,7 @@ yrel <- y$Runtime[y$ADMB == "12.3"] / y$Runtime[y$ADMB == "13.0-beta"]
 round(sort(yrel), 2)
 yplot <- barchart(Runtime ~ Test | Platform, groups=ADMB, data=y, col=3:2,
                   main="Grouped comparison", ylab="Runtime (sec)",
-                  sub="Green = ADMB 12.3\nRed = ADMB 13.0-beta")
+                  sub="Green = ADMB 12.3\nRed = ADMB 13.0-beta (May)")
 
 ## Export plots
 
