@@ -17,7 +17,8 @@ xplot <- barchart(Runtime ~ Test | Machine + OS, groups=ADMB, data=x, col=col,
 ## Grouped comparison
 x$Platform <- "Linux"
 x$Platform[grep("Windows", x$OS)] <- "Windows"
-y <- aggregate(Runtime ~ ADMB + Platform + Test, data=x, median)
+geomean <- function(x) exp(mean(log(x)))
+y <- aggregate(Runtime ~ ADMB + Platform + Test, data=x, geomean)
 yplot <- barchart(Runtime ~ Test | Platform, groups=ADMB, data=y, col=col,
                   main="Grouped comparison", ylab="Runtime (sec)", sub=sub)
 

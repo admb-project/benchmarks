@@ -23,3 +23,9 @@ Precision 3560,Windows 11 (native),10.3 (rtools 4.2),13.0_beta_2022_07_10,catage
 Precision 3560,Ubuntu 20.04 (WSL),9.4,12.3,catage,26.0
 Precision 3560,Ubuntu 20.04 (WSL),9.4,13.0_beta_2022_05_16,catage,35.3
 Precision 3560,Ubuntu 20.04 (WSL),9.4,13.0_beta_2022_07_10,catage,26.1
+Precision 4700,Windows 10 (native),8.3 (rtools 4.0),12.3,catage,86.2
+Precision 4700,Windows 10 (native),8.3 (rtools 4.0),13.0_beta_2022_05_16,catage,221.5
+Precision 4700,Windows 10 (native),8.3 (rtools 4.0),13.0_beta_2022_07_10,catage,132.7
+Precision 4700,Windows 10 (native),8.3 (rtools 4.0),12.3,vol,69.4
+Precision 4700,Windows 10 (native),8.3 (rtools 4.0),13.0_beta_2022_05_16,vol,124.5
+Precision 4700,Windows 10 (native),8.3 (rtools 4.0),13.0_beta_2022_07_10,vol,80.9
